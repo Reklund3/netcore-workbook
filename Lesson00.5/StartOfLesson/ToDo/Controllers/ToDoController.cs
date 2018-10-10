@@ -31,7 +31,6 @@ namespace ToDoApp.Controllers
         };
         public IActionResult Index()
         {
-            
             return View(list);
         }
     }
