@@ -5,11 +5,11 @@ namespace ToDoApp.Services
 {
     public class Repository
     {
-        public static Dictionary<int, Status> Statuses = new Dictionary<int, Status>
+        public static List<Status> Statuses = new List<Status>
         {
-            { 1, new Status { Id = 1, Value = "Not Started" } },
-            { 2, new Status { Id = 2, Value = "In Progress" } },
-            { 3, new Status { Id = 3, Value = "Done" } }
+            new Status { Id = 1, Value = "Not Started" },
+            new Status { Id = 2, Value = "In Progress" },
+            new Status { Id = 3, Value = "Done" }
         };
 
         public static List<ToDo> ToDos = new List<ToDo>
