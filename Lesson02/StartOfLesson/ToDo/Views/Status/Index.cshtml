@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<ToDoApp.Models.Status>
 
+
 @{
     ViewData["Title"] = "Index";
+    
 }
 
 <h2>Index</h2>
@@ -22,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in ToDoApp.Services.Repository.Statuses) {
+@foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)

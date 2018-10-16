@@ -5,7 +5,7 @@ namespace ToDoApp.Services
 {
     public class Repository
     {
-        public static List<Status> Statuses = new List<Status>
+        public static List<Status> Statuses = new List<Status>()
         {
             new Status { Id = 1, Value = "Not Started" },
             new Status { Id = 2, Value = "In Progress" },
