@@ -7,8 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\600px-Facebook_logo.png" />
+    <Content Remove="wwwroot\images\Twitter_bird_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\600px-Facebook_logo.png" />
+    <None Include="wwwroot\images\Twitter_bird_logo.png" />
   </ItemGroup>
 
 </Project>
