@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
+using System;
 
-namespace TagHelper
+namespace TagHelperHW
 {
-    public class AutoComplete
+    
+    public class AutoComplete : TagHelper
     {
+        
     }
 }
