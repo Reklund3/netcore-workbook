@@ -45,6 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
+            @(await Component.InvokeAsync("Media"))
             <p>&copy; 2018 - ToDo</p>
         </footer>
     </div>
