@@ -33,6 +33,13 @@ namespace ToDoApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.Use(async (context, next) => {
+                var timer = new System.Diagnostics.Stopwatch();
+                timer.Start();
+                await next.Invoke();
+                timer.Stop();
+                System.Console.WriteLine("It takes this much time: {0}",timer.Elapsed.Milliseconds);
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -44,7 +51,7 @@ namespace ToDoApp
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
