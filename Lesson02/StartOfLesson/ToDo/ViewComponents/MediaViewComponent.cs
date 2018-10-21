@@ -8,7 +8,7 @@ namespace ToDoApp.ViewComponents
 {
     public class MediaViewComponent : ViewComponent
     {
-        public IActionResult async()
+        public IViewComponentResult Invoke()
         {
             return View();
         }
