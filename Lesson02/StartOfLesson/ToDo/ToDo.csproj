@@ -7,25 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Shared\images\**" />
-    <Content Remove="Views\Shared\images\**" />
-    <EmbeddedResource Remove="Views\Shared\images\**" />
-    <None Remove="Views\Shared\images\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\images\600px-Facebook_logo.png" />
-    <Content Remove="wwwroot\images\Twitter_bird_logo.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\images\600px-Facebook_logo.png" />
-    <None Include="wwwroot\images\Twitter_bird_logo.png" />
+    <ProjectReference Include="..\TagHelper\TagHelper.csproj" />
   </ItemGroup>
 
 </Project>
