@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TagHelper\TagHelper.csproj" />
+    <ProjectReference Include="..\TagHelperHW\TagHelperHW.csproj" />
   </ItemGroup>
 
 </Project>
