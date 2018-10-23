@@ -28,7 +28,6 @@ namespace ToDoApp.Controllers
         {
             return View();
         }
-
         // POST: Status/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
