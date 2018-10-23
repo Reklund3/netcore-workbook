@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ToDo
+namespace ToDoApp
 {
     public class Startup
     {
@@ -53,7 +53,7 @@ namespace ToDo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=ToDo}/{action=Index}/{id?}");
             });
         }
     }

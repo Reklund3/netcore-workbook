@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo", "ToDo\ToDo.csproj", "{2B335EC8-68FE-47D3-AFB5-84FF4340798E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelperHW", "TagHelperHW\TagHelperHW.csproj", "{6677B59F-B54E-453F-84F6-8DB9884D64DD}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +22,7 @@ Global
 		{6677B59F-B54E-453F-84F6-8DB9884D64DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6677B59F-B54E-453F-84F6-8DB9884D64DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6677B59F-B54E-453F-84F6-8DB9884D64DD}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,6 +13,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+
                 <label asp-for="Id" class="control-label"></label>
                 <input asp-for="Id" my-auto-complete="off" class="form-control" />
                 <span asp-validation-for="Id" class="text-danger"></span>
@@ -33,3 +34,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
