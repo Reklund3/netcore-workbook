@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ToDoApp.Middleware;
 
 namespace ToDoApp
 {
@@ -33,13 +34,7 @@ namespace ToDoApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.Use(async (context, next) => {
-                var timer = new System.Diagnostics.Stopwatch();
-                timer.Start();
-                await next.Invoke();
-                timer.Stop();
-                System.Console.WriteLine("It takes this much time: {0}",timer.Elapsed.Milliseconds);
-            });
+            app.UseMiddleware<UnwrapExceptionMiddleware>();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

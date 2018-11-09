@@ -17,10 +17,13 @@ namespace ToDoApp.Middleware
             _next = next;
         }
 
-        public Task Invoke(HttpContext httpContext)
+        public async Task Invoke(HttpContext httpContext)
         {
-
-            return _next(httpContext);
+            var timer = new System.Diagnostics.Stopwatch();
+            timer.Start();
+            await _next(httpContext);
+            timer.Stop();
+            System.Console.WriteLine("It takes this much time: {0}", timer.Elapsed.Milliseconds);
         }
     }
 
