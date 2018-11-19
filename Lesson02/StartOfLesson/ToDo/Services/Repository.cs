@@ -7,7 +7,11 @@ namespace ToDoApp.Services
 {
     public class Repository
     {
-        public static List<Status> Statuses = new List<Status>()
+        private static int toDoKeyCounter = 5;
+        private static int statusKeyCounter = 5;
+        
+
+        public static List<Status> _statuses = new List<Status>()
         {
             new Status { Id = 1, Value = "Not Started" },
             new Status { Id = 2, Value = "In Progress" },
